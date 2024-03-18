@@ -1,0 +1,52 @@
+
+
+
+
+
+
+/*-----------------------------------*\
+  #COMPONENTS
+\*-----------------------------------*/
+
+@import url('../components/card.css');
+@import url('../components/btn.css');
+
+
+
+
+
+/*-----------------------------------*\
+  #SERVICES
+\*-----------------------------------*/
+
+.service { -webkit-padding-before: calc(var(--section-padding) + 60px); padding-block-start: calc(var(--section-padding) + 60px); }
+
+.service-list {
+  display: -ms-grid;
+  display: grid;
+  gap: 25px;
+}
+
+.card-title { -webkit-margin-after: 10px; margin-block-end: 10px; }
+
+.card ion-icon { font-size: 3.2rem; }
+
+.card .body-sm { color: var(--jet); }
+
+
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for large than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  .service-list { -ms-grid-columns: 1fr 1fr; grid-template-columns: 1fr 1fr; }
+
+}
